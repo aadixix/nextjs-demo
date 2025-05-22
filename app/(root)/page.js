@@ -42,7 +42,9 @@ export default function Home() {
   };
   return (
     <>
-      <MetaTags {...metaData} />
+      <MetaTags />
+      {/* <MetaTags {...metaData} /> */}
+
       <MainBanner data={bannerData[0]} />
       <Cards />
     </>
