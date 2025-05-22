@@ -4,26 +4,62 @@ import Cards from "../components/CardSlide/Cards";
 import MetaTags from "../components/MetaTags";
 import bannerData from "../data/bannerData";
 
-export default function Home() {
-  const metaData = {
+export const metadata = {
+  title: "Ground Connect",
+  description:
+    "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी और आपसी लाभकारी व्यापार समझौते को 'ऐतिहासिक मील का पत्थर' बताया है।",
+  keywords: [
+    "India",
+    "UK",
+    "United Kingdom",
+    "India-UK Free Trade Agreement",
+    "UK-India FTA",
+    "tariff",
+    "agriculture exports",
+    "automobiles",
+    "textiles",
+    "footwear",
+    "whisky",
+    "food products",
+    "marine products",
+    "Prime Minister Narendra Modi",
+    "FIEO",
+  ],
+  authors: [{ name: "Codingest", url: "https://www.groundconnect.in" }],
+  robots: "index, follow",
+  applicationName: "Ground Connect",
+  metadataBase: new URL("https://www.groundconnect.in"),
+  alternates: {
+    canonical:
+      "/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    siteName: "Ground Connect",
+    url: "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
     title:
       "ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?",
     description:
       "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी और आपसी लाभकारी व्यापार समझौते को 'ऐतिहासिक मील का पत्थर' बताया है।",
-    keywords:
-      "India, UK, United Kingdom, UK, India-UK Free Trade Agreement, UK-India FTA, tariff, agriculture exports, automobiles, textiles, footwear, whisky, food products, marine products, Prime Minister Narendra Modi, FIEO",
-    author: "Ajeet Singh",
-    url: "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
-    image:
-      "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
-    publishedTime: "2025-05-07 19:12:27",
-    modifiedTime: "2025-05-08 12:53:59",
+    images: [
+      {
+        url: "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
+        width: 750,
+        height: 422,
+        alt: "Article thumbnail",
+      },
+    ],
+    authors: ["Ajeet Singh"],
+    publishedTime: "2025-05-07T19:12:27Z",
+    modifiedTime: "2025-05-08T12:53:59Z",
     tags: [
       "India",
       "UK",
       "United Kingdom",
-      "UK",
-      "India-UK Free Trade Agreement",
       "UK-India FTA",
       "tariff",
       "agriculture exports",
@@ -36,71 +72,32 @@ export default function Home() {
       "Prime Minister Narendra Modi",
       "FIEO",
     ],
-    canonical:
-      "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
-    ampUrl:
-      "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
-  };
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@RuralVoice",
+    creator: "@Ajeet Singh",
+    title:
+      "ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?",
+    description:
+      "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी और आपसी लाभकारी व्यापार समझौते को 'ऐतिहासिक मील का पत्थर' बताया है।",
+    images: [
+      "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
+    ],
+  },
+  icons: {
+    icon: "/fav.png",
+    shortcut:
+      "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
+  },
+  other: {
+    "fb:app_id": "104841141528181",
+  },
+};
+
+export default function Home() {
   return (
     <>
-      <Head>
-        <title>Ground Connect</title>
-        <meta
-          name="description"
-          content="प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ..."
-        />
-        <meta
-          name="keywords"
-          content="India, UK, United Kingdom, India-UK Free Trade Agreement, tariff, agriculture exports, automobiles, textiles, footwear, whisky, food products, marine products, Prime Minister Narendra Modi, FIEO"
-        />
-        <meta name="author" content="Codingest" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Ground Connect" />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?"
-        />
-        <meta
-          property="og:description"
-          content="प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ..."
-        />
-        <meta
-          property="og:url"
-          content="https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635"
-        />
-        <meta
-          property="og:image"
-          content="https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png"
-        />
-        <meta property="og:image:width" content="750" />
-        <meta property="og:image:height" content="422" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@RuralVoice" />
-        <meta name="twitter:creator" content="@Ajeet Singh" />
-        <meta
-          name="twitter:title"
-          content="ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?"
-        />
-        <meta
-          name="twitter:description"
-          content="प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ..."
-        />
-        <meta
-          name="twitter:image"
-          content="https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png"
-        />
-        <link
-          rel="canonical"
-          href="https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635"
-        />
-        <link
-          rel="shortcut icon"
-          href="https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png"
-        />
-      </Head>
-
       <MainBanner data={bannerData[0]} />
       <Cards />
     </>
